@@ -12,7 +12,7 @@ const Hero = ({ onStartQuiz }: HeroProps) => {
       <div 
         className="absolute inset-0 bg-gradient-to-br from-mocha-900/20 via-caramel-800/30 to-mocha-800/40"
         style={{
-          backgroundImage: `url('/images/hero-image.jpg')`, 
+         backgroundImage: `url('/images/hero-image.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
