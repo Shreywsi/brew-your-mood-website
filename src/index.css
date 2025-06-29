@@ -22,8 +22,3 @@
   --mint-500: #4caf50;
   --rose-400: #e57373;
 }
-
-.bg-cream-50 { background-color: var(--cream-50); }
-.bg-mocha-900 { background-color: var(--mocha-900); }
-.text-cream-100 { color: var(--cream-100); }
-/* ... add all other custom color classes based on your tailwind.config.ts ... */
