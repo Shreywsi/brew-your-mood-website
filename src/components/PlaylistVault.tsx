@@ -1,4 +1,3 @@
-
 import { Play, Music, Clock, Users } from 'lucide-react';
 
 const PlaylistVault = () => {
@@ -9,7 +8,9 @@ const PlaylistVault = () => {
       mood: "Energetic",
       duration: "45 min",
       tracks: 18,
-      color: "from-orange-400 to-red-500"
+      color: "from-orange-400 to-red-500",
+      // IMPORTANT: Replace this with your actual Spotify playlist URL
+      spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=example1"
     },
     {
       title: "Afternoon Chill",
@@ -17,7 +18,9 @@ const PlaylistVault = () => {
       mood: "Relaxed",
       duration: "32 min",
       tracks: 12,
-      color: "from-blue-400 to-purple-500"
+      color: "from-blue-400 to-purple-500",
+      // IMPORTANT: Replace this with your actual Spotify playlist URL
+      spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=example2"
     },
     {
       title: "Focus Flow",
@@ -25,7 +28,9 @@ const PlaylistVault = () => {
       mood: "Focused",
       duration: "60 min",
       tracks: 24,
-      color: "from-green-400 to-teal-500"
+      color: "from-green-400 to-teal-500",
+      // IMPORTANT: Replace this with your actual Spotify playlist URL
+      spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=example3"
     },
     {
       title: "Cozy Evening",
@@ -33,7 +38,9 @@ const PlaylistVault = () => {
       mood: "Peaceful",
       duration: "38 min",
       tracks: 15,
-      color: "from-pink-400 to-rose-500"
+      color: "from-pink-400 to-rose-500",
+      // IMPORTANT: Replace this with your actual Spotify playlist URL
+      spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=example4"
     },
     {
       title: "Creative Spark",
@@ -41,7 +48,9 @@ const PlaylistVault = () => {
       mood: "Inspired",
       duration: "42 min",
       tracks: 16,
-      color: "from-yellow-400 to-orange-500"
+      color: "from-yellow-400 to-orange-500",
+      // IMPORTANT: Replace this with your actual Spotify playlist URL
+      spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=example5"
     },
     {
       title: "Rainy Day Comfort",
@@ -49,7 +58,9 @@ const PlaylistVault = () => {
       mood: "Contemplative",
       duration: "50 min",
       tracks: 20,
-      color: "from-gray-400 to-blue-500"
+      color: "from-gray-400 to-blue-500",
+      // IMPORTANT: Replace this with your actual Spotify playlist URL
+      spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=example6"
     }
   ];
 
@@ -92,10 +103,16 @@ const PlaylistVault = () => {
                   </div>
                 </div>
                 
-                <button className="w-full bg-mocha-800 text-white py-3 rounded-xl font-medium hover:bg-mocha-700 transition-colors flex items-center justify-center">
+                {/* Modified: Changed to <a> tag with href, target, and rel */}
+                <a 
+                  href={playlist.spotifyUrl} 
+                  target="_blank" // Opens in a new tab
+                  rel="noopener noreferrer" // Security best practice for target="_blank"
+                  className="w-full bg-mocha-800 text-white py-3 rounded-xl font-medium hover:bg-mocha-700 transition-colors flex items-center justify-center"
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Listen on Spotify
-                </button>
+                </a>
               </div>
             </div>
           ))}
