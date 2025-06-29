@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define your custom colors here */
+:root {
+  --cream-50: #fefefc;
+  --mocha-900: #1a1006;
+  --mocha-800: #3b2c1f;
+  --mocha-700: #5c4d38;
+  --mocha-600: #7d6c51;
+  --mocha-400: #9e8d69;
+  --mocha-100: #e0d9cd;
+  --cream-100: #fefefc;
+  --cream-200: #fcfbf9;
+  --cream-300: #faf8f5;
+  --caramel-400: #e77d2b;
+  --caramel-300: #ec924c;
+  --caramel-500: #d66a1a;
+  --caramel-600: #c55e17;
+  --mint-50: #e8f5e9;
+  --mint-500: #4caf50;
+  --rose-400: #e57373;
+}
+
+.bg-cream-50 { background-color: var(--cream-50); }
+.bg-mocha-900 { background-color: var(--mocha-900); }
+.text-cream-100 { color: var(--cream-100); }
+/* ... add all other custom color classes based on your tailwind.config.ts ... */
